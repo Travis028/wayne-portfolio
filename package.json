@@ -1,0 +1,16 @@
+{
+  "name": "wayne-portfolio",
+  "version": "1.0.0",
+  "description": "Wayne's Professional Portfolio Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "keywords": ["portfolio", "website", "developer"],
+  "author": "Wayne",
+  "license": "MIT"
+}
