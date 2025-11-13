@@ -1,0 +1,10 @@
+[build]
+  publish = "."
+  command = "echo 'No build needed'"
+
+[context.production]
+  publish = "."
+
+# Only deploy from main branch
+[context.branch-deploy]
+  command = "echo 'Branch deploy disabled'"
