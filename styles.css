@@ -78,30 +78,29 @@ body {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 0 20px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 2rem 5%;
     position: relative;
     overflow: hidden;
-    animation: gradientShift 12s ease-in-out infinite;
 }
 
-@keyframes gradientShift {
-    0%, 100% {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    }
-    33% {
-        background: linear-gradient(225deg, #764ba2 0%, #667eea 100%);
-    }
-    66% {
-        background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
-    }
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+    z-index: 1;
 }
 
-/* Animated Background */
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
 .hero-bg-animation {
     position: absolute;
     top: 0;
@@ -248,13 +247,30 @@ body {
     color: #333;
 }
 
-.profile-img {
-    width: 300px;
-    height: 300px;
+/* Profile Image Container */
+.profile-image-container {
+    width: 320px;
+    height: 320px;
     border-radius: 50%;
-    object-fit: cover;
+    overflow: hidden;
     border: 5px solid #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    position: relative;
+    background: #f1f5f9;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.profile-image-container:hover .profile-img {
+    transform: scale(1.05);
 }
 
 .profile-placeholder {
