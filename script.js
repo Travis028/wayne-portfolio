@@ -158,8 +158,29 @@ const style = document.createElement('style');
 style.textContent = particleCSS;
 document.head.appendChild(style);
 
-// Initialize typing effect when page loads
-window.addEventListener('load', () => {
+// Wait for the page to fully load
+window.addEventListener('load', function() {
+    // Add fade-in class to profile image
+    const profileImg = document.querySelector('.profile-img');
+    if (profileImg) {
+        profileImg.style.opacity = '0';
+        profileImg.style.transition = 'opacity 1s ease-in-out';
+        setTimeout(() => {
+            profileImg.style.opacity = '1';
+        }, 100);
+    }
+
+    // Add fade-in class to background images
+    const sections = document.querySelectorAll('.about, .skills, .contact');
+    sections.forEach(section => {
+        section.style.opacity = '0';
+        section.style.transition = 'opacity 1s ease-in-out';
+        setTimeout(() => {
+            section.style.opacity = '1';
+        }, 300);
+    });
+
+    // Initialize typing effect when page loads
     const heroTitle = document.querySelector('.hero-title');
     const originalText = heroTitle.textContent;
     typeWriter(heroTitle, originalText, 80);

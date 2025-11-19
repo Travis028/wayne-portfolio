@@ -253,20 +253,8 @@ body {
     height: 300px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    display: block;
-    margin: 0 auto;
-    animation: floatProfile 6s ease-in-out infinite;
-}
-
-@keyframes floatProfile {
-    0%, 100% {
-        transform: translateY(0px) rotate(0deg);
-    }
-    50% {
-        transform: translateY(-20px) rotate(5deg);
-    }
+    border: 5px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .profile-placeholder {
@@ -321,9 +309,13 @@ section {
 
 /* About Section */
 .about {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background: 
         linear-gradient(rgba(249, 250, 251, 0.3), rgba(224, 242, 254, 0.4)),
-        url('../graduation 2.jpeg');
+        url('./images/graduation 2.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -544,9 +536,13 @@ section {
 
 /* Skills Section */
 .skills {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background: 
         linear-gradient(rgba(249, 250, 251, 0.3), rgba(254, 243, 199, 0.4)),
-        url('../graduation 3.jpeg');
+        url('./images/graduation 3.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -646,9 +642,13 @@ section {
 
 /* Contact Section */
 .contact {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background: 
         linear-gradient(rgba(31, 41, 55, 0.4), rgba(55, 65, 81, 0.5)),
-        url('../graduation 1.jpeg');
+        url('./images/graduation 1.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
